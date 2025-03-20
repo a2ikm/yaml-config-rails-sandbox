@@ -1,0 +1,16 @@
+production:
+  foo: production_foo
+  bar:
+    - production_bar
+staging:
+  foo: staging_foo
+  bar:
+    - <%= ENV["NAMESPACE"] %>_bar
+develop:
+  foo: develop_foo
+  bar:
+    - develop_bar
+test:
+  foo: test_foo
+  bar:
+    - test_bar
